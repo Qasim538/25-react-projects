@@ -65,7 +65,7 @@ const Carousel = ({ url, limit = 5, page = 1 }) => {
 
       <span className="circle-indicator">
         {images && images.length
-          ? images.map((_, index) => (
+          ? images.map((_, index) => 
               <button
                 key={index}
                 className={
@@ -75,7 +75,7 @@ const Carousel = ({ url, limit = 5, page = 1 }) => {
                 }
                 onClick={() => setCurrentSlide(index)}
               ></button>
-            ))
+            )
           : null}
       </span>
     </div>
