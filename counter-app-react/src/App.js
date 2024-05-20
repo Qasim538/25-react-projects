@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className="App" my-5>
-      <h1>Counter App</h1>
+      <h1>Counter App <br /> Using React Hooks</h1>
 
       <h1 style={{cursor: "pointer"}} className="count" onClick={() => setCount(0)} > {count} </h1>
 
