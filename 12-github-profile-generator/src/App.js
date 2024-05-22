@@ -1,12 +1,23 @@
 import './App.css';
-import Profile from './Components/profile';
+import Test from './Components/CustomeHooks/Test';
+import UseOutSideClick from './Components/ClickOutSide/UseOutSideClick';
+import Profile from './Components/ProfileGitHub/profile';
+import UseWindowResize from './Components/UseWindow/UseWindowResize';
+import ScrollTop from './Components/ScrollToTopBottom/ScrollTop';
 
 function App() {
   return (
     <div className="App">
 
-      <Profile />
+     { /* <Profile /> */}
+    { /* <Test/> */}
+     { /* <UseOutSideClick /> */}
 
+{  /*   <UseWindowResize />
+  */}
+
+  <ScrollTop />
+  
     </div>
   );
 }
