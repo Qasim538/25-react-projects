@@ -16,7 +16,7 @@ const UseFetchHook = (url, options = {}) => {
       setError(null);
       setPending(false);
 
-      console.log(data);
+      // console.log(data);
     } catch (e) {
       setError(`$(e). Some Error has occured.`);
       setPending(false);
