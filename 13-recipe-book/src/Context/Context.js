@@ -6,7 +6,7 @@ const GlobalState = ({ children }) => {
   const [searchParam, setSearchParam] = useState("");
   const [loading, setLoading] = useState(false);
   const [recipeList, setRecipeList] = useState([]);
-  const [favoritestList, setFavoritesLists] = useState([]);
+  const [recipeDetailsData, setRecipeDetailsData] = useState(null);
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -28,9 +28,7 @@ const GlobalState = ({ children }) => {
     }
   }
 
-  function handleAddToFavorite(getCurrentItem) {
-    console.log(getCurrentItem);
-  }
+ 
 
   console.log(loading, recipeList);
 
@@ -42,7 +40,8 @@ const GlobalState = ({ children }) => {
         recipeList,
         setSearchParam,
         handleSubmit,
-        handleAddToFavorite
+        recipeDetailsData,
+        setRecipeDetailsData
       }}
     >
       {children}
